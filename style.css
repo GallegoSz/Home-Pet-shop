@@ -6,19 +6,22 @@ body {
 }
 
 header {
-    background-color: black ;
+    background-color: #0A0EFA;
     display: flex;
     justify-content: space-between;
     padding: 16px;
     align-items: center;
     flex-wrap: wrap;
+    color: white;
+    text-align: left;
 }
 
 header > img {   
-    max-width:140px;
-    max-height:90px;
+    max-width: 150px;
+    max-height: 100px;
     width: auto;
     height: auto;
+    box-shadow: 2px;
 }
 
 header > ul {
@@ -30,23 +33,25 @@ header > ul > li {
     padding-right: 19px;
 }
 
-header > ul > li > a{
+header > ul > li > a {
     text-decoration: none;
     color: white;
     margin-left: 10px;
-    font-size: 28px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 a:hover {
-    color: black;
+    color: #0A5AFA;
     background-color: white;
     box-shadow: 0 0 0 5px white;
     border-radius: 3px;
     transition: 0.3s;
 }
 
-img {
-    background-image: c;
-    
+article > img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
