@@ -187,3 +187,29 @@ section > div.flex {
 .depoimentos-box > p {
     font-size: 19px;
 }
+
+
+#historia {
+    padding: 40px 4%;
+}
+
+#historia .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+#img-historia > img {
+    border: 2px solid blue;
+    border-radius: 50px ;
+}
+
+#txt-historia > h2 {
+    font-size: 70px;
+    margin-bottom: 0px;
+}
+
+#txt-historia > p {
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 19px;
+}
