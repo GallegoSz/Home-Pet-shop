@@ -1,8 +1,13 @@
 @charset "utf-8";
 
 body {
-    background-color: #F9F6F2;
-    margin: 0px;
+    background-color: white;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.flex {
+    display: flex;
 }
 
 header {
@@ -13,7 +18,6 @@ header {
     align-items: center;
     flex-wrap: wrap;
     color: white;
-    text-align: left;
 }
 
 header > img {   
@@ -21,12 +25,12 @@ header > img {
     max-height: 100px;
     width: auto;
     height: auto;
-    box-shadow: 2px;
 }
 
 header > ul {
     display: flex;
     list-style: none;
+    padding: 0;
 }
 
 header > ul > li {
@@ -38,7 +42,7 @@ header > ul > li > a {
     color: white;
     margin-left: 10px;
     font-size: 22px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 8px;
 }
 
 a:hover {
@@ -49,10 +53,109 @@ a:hover {
     transition: 0.3s;
 }
 
+h2.titulo {
+    text-align: center;
+    font-size: 48px;
+}
+
 article > img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
     display: block;
+}
+
+/* TOPO DO SITE */
+#topo-do-site {
+    padding: 10px 4%;
+}
+
+#topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#txt-topo-do-site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+}
+
+#txt-topo-do-site > h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+span {
+    color: #0A5AFA;
+}
+
+#txt-topo-do-site > p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#imagem-topo-do-site img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    color: white;
+    background-color: #0A0EFA;
+    border-radius: 30px;
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 8px #0A0EFA;
+    transition-duration: 0.5s;
+}
+
+section > div.flex {
+    gap: 60px;
+}
+
+#especialidades {
+    padding: 40px 4%;
+}
+
+.especialidades-box {
+    padding: 40px;
+    border: 2px solid #0A0EFA;
+    border-radius: 20px;
+    margin-top: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+.especialidades-box:hover {
+    transform: scale(1.05);
+    transition: 0.6s;
+    box-shadow: 0px 0px 8px #0a0efa;
+}
+
+.especialidades-box > i {
+    font-size: 70px;
+    color: #0A0EFA;
+}
+
+.especialidades-box > h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.especialidades-box > p {
     
 }

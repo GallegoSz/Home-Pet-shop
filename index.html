@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,50 +13,63 @@
         <ul>
             <li><a href="#">Início</a></li>
             <li><a href="#">Sobre</a></li>
-            <li><a href="#">Produtos e Serviços</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Serviços</a></li>
             <li><a href="#">Contato</a></li>
-            <li><a href="#">Trabalhe conosco</a></li>
         </ul>
     </header>
     <main>
         <article>
             <img src="imagens/imagemdeintroducao.png" alt="Uma imagem de dois cachorros e um gato, atrás de um texto escrito, Seu pet mais feliz">
         </article>
-        <section>
-            <h1>Bem vindo a PetMania!</h1>
-            <p>
-                Sabemos que seu pet é mais do que um animal de estimação - ele é parte da sua família. Por isso, estamos comprometidos em oferecer o melhor em produtos e serviços para o seu amigo peludo, escamoso ou penoso.
-                Nossa missão é garantir a saúde, felicidade e bem-estar de todos os pets. Trabalhamos com dedicação e amor para proporcionar uma experiência única e completa para você e seu pet.
-            </p>
-            <img src="imagens/fotodeoutrocachorro.png" alt="">
-            <a href="#" class="contato"><button>Entre em contato!</button></a>
+        <section id="topo-do-site">
+                <div class="flex">
+                    <div id="txt-topo-do-site">
+                        <h1>
+                                Bem-vindo à PetMania<span>!</span>
+                        </h1>
+                        <p>
+                                Sabemos que seu pet é mais do que um animal de estimação - ele é parte da sua família. Por isso, estamos comprometidos em oferecer o melhor em produtos e serviços para o seu amigo peludo, escamoso ou penoso.
+                        </p>
+                        <div id="petmania-contato">
+                            <a href="#">
+                                <button>Entre em contato!</button>
+                            </a>
+                        </div>
+                    </div>
+                    
+
+                    <div id="imagem-topo-do-site">
+                        <img src="imagens/design.png" alt="Desenho de um cachorro">
+                    </div>
+                </div>
         </section>
-        <section>
-            <h2>
-                O que nos torna únicos:
+
+        <section id="especialidades">
+            <h2 class="titulo">
+                O que nos torna <span>únicos</span>:
             </h2>
+            <div class="flex">
+                <div class="especialidades-box">
+                    <i class="bi bi-bag-check-fill"></i>
+                    <h3>Produtos de Qualidade:</h3>
+                    <p>Selecionamos cuidadosamente cada produto em nossa loja, garantindo que você tenha acesso ao que há de melhor no mercado pet. Trabalhamos com as melhores marcas e produtos naturais, seguros e eficazes.</p>
+                </div>
 
-            <h3>
-                Produtos de Qualidade:
-            </h3>
-            <p>
-                Selecionamos cuidadosamente cada produto em nossa loja, garantindo que você tenha acesso ao que há de melhor no mercado pet. Trabalhamos com as melhores marcas e produtos naturais, seguros e eficazes.
-            </p>
-
-            <h3>
-                Atendimento Personalizado:
-            </h3>
-            <p>
-                Nossa equipe é apaixonada por animais e está sempre pronta para oferecer um atendimento personalizado, ajudando você a encontrar exatamente o que seu pet precisa.
-            </p>
-
-            <h3> 
-                Serviços Exclusivos: 
-            </h3>
-            <p>
-                Oferecemos uma variedade de serviços que incluem banho e tosa, consulta veterinária, adestramento, e muito mais. Todos realizados por profissionais experientes e qualificados.
-            </p>
+                <div class="especialidades-box">
+                    <i class="bi bi-person-badge-fill"></i>
+                    <h3>Atendimento Personalizado:</h3>
+                    <p>Nossa equipe é apaixonada por animais e está sempre pronta para oferecer um atendimento personalizado,ajudando você a encontrar exatamente o que seu pet precisa.</p>
+                </div>
+                    
+                <div class="especialidades-box">
+                    <i class="bi bi-clipboard-plus-fill"></i>
+                    <h3>Serviços Exclusivos:</h3>
+                    <p>Oferecemos uma variedade de serviços que incluem banho e tosa, consulta veterinária, adestramento, e muito mais. Todos realizados por profissionais experientes e qualificados.</p>
+                </div>
+            </div>
         </section>
+
 
         <section>
             <h2>
