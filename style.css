@@ -9,7 +9,7 @@ header {
     background-color: #0A0EFA;
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: 10px;
     align-items: center;
     flex-wrap: wrap;
     color: white;
@@ -54,4 +54,5 @@ article > img {
     height: auto;
     object-fit: cover;
     display: block;
+    
 }
