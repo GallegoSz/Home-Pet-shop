@@ -65,7 +65,6 @@ article > img {
     display: block;
 }
 
-/* TOPO DO SITE */
 #topo-do-site {
     padding: 60px 4%;
     padding-bottom: 13px;
@@ -103,7 +102,7 @@ span {
     height: auto;
 }
 
-button {
+.special-button {
     color: white;
     background-color: #0A0EFA;
     border-radius: 30px;
@@ -114,7 +113,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.special-button:hover {
     background-color: black;
     color: white;
     box-shadow: 0px 0px 8px #0A0EFA;
@@ -126,7 +125,7 @@ section > div.flex {
 }
 
 #especialidades {
-    padding: 40px 4%;
+    padding: 40px 40px 120px 4%;
 }
 
 .especialidades-box {
@@ -163,12 +162,14 @@ section > div.flex {
 
 #depoimentos {
     padding: 40px 4%;
-    padding-top: 140px;
+    background-color: #0A0EFA;
+    text-align: center;
+    box-shadow: 0 0 40px 10px #0a0efa38
 }
 
 .depoimentos-box {
-    color: white;
-    background-color: #0a0efa;
+    color: black;
+    background-color: white;
     padding: 30px;
     border: 10px solid #0A0EFA;
     border-radius: 70px 0px 70px 0px;
@@ -176,21 +177,30 @@ section > div.flex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0 10px;
+}
+
+#depoimentos h2 {
+    font-size: 40px;
+    color: white;
 }
 
 .depoimentos-box > h3 {
     font-size: 30px;
     margin-bottom: 0px;
-    text-decoration: underline white;
+    text-decoration: underline #0A0EFA;
 }
 
 .depoimentos-box > p {
     font-size: 19px;
 }
 
+#depoimentos .flex {
+    align-items: center;
+}
 
 #historia {
-    padding: 40px 4%;
+    padding: 120px 4%;
 }
 
 #historia .flex {
@@ -212,4 +222,29 @@ section > div.flex {
     margin: 20px 0;
     text-align: justify;
     font-size: 19px;
+}
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #0a0efa38;
+    background-color: #0A0EFA;
+    
+}
+
+footer button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: black;
+    color: #0A0EFA;
+    font-size: 30px;
+    margin: 0 5px;
+}
+
+footer button:hover {
+    transform: scale(1.15);
+    transition: 0.6s;
+    box-shadow: 0px 0px 8px #0a0efa;
+    cursor: pointer;
 }
