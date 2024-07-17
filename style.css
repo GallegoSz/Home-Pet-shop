@@ -27,17 +27,17 @@ header > img {
     height: auto;
 }
 
-header > ul {
+header > nav > ul {
     display: flex;
     list-style: none;
     padding: 0;
 }
 
-header > ul > li {
+header nav > ul > li {
     padding-right: 19px;
 }
 
-header > ul > li > a {
+header nav > ul > li > a {
     text-decoration: none;
     color: white;
     margin-left: 10px;
@@ -53,9 +53,15 @@ a:hover {
     transition: 0.3s;
 }
 
+/* Menu mobile */
+
+
+
+/* Menu mobile */
+
 h2.titulo {
     text-align: center;
-    font-size: 48px;
+    font-size: 30px;
 }
 
 article > img {
@@ -125,7 +131,8 @@ section > div.flex {
 }
 
 #especialidades {
-    padding: 40px 40px 120px 4%;
+    padding: 40px 4%;
+    padding-bottom: 148px;
 }
 
 .especialidades-box {
@@ -220,31 +227,87 @@ section > div.flex {
 
 #txt-historia > p {
     margin: 20px 0;
-    text-align: justify;
+    text-align: left;
     font-size: 19px;
 }
 
 footer {
-    padding: 60px 4%;
-    box-shadow: 0 0 40px 10px #0a0efa38;
     background-color: #0A0EFA;
-    
+    color: white;
+    padding: 40px 4%;
+    text-align: center;
+    box-shadow: 0 0 40px 10px #0a0efa38
 }
 
-footer button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 0;
-    background-color: black;
-    color: #0A0EFA;
-    font-size: 30px;
-    margin: 0 5px;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-footer button:hover {
-    transform: scale(1.15);
-    transition: 0.6s;
-    box-shadow: 0px 0px 8px #0a0efa;
-    cursor: pointer;
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #0A5AFA;
+}
+
+.footer-section .bi-envelope-fill {
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #0A5AFA;
+    transition: 0.45s;
+}
+
+@media screen and (max-width: 946px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    #topo-do-site h1 {
+        text-align: center;
+        font-size: 46px;
+    }
+
+    #historia .flex {
+        flex-direction: column-reverse;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #img-historia > img {
+        max-width: 300px;
+        min-width: 300px;
+        width: auto;
+        height: auto;
+    }
 }

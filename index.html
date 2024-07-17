@@ -10,13 +10,16 @@
 <body>
     <header>
         <img src="imagens/logo_petmania.png" alt="Logotipo da marca, várias patas de cachorro.">
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
+        <nav>
+            <ul id="menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
     </header>
     <main>
         <article>
@@ -121,21 +124,25 @@
     </main>
 
     <footer>
-        <div id="line-footer">
-            <div class="logo-footer">
-                <img src="imagens/logo_petmania.png" alt="Logo da Petmania, um monte de patas de cachorro">
-                <div id="redes-sociais">
-                    <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                    <a href="#"><button><i class="bi bi-facebook"></i></button></a>
-                    <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
-
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="imagens/logo_petmania.png" alt="Logotipo da PetMania, várias patas de cachorro.">
+                <p>© 2024 João Pedro Gallego. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:jopedrogallego@hotmail.com" id="meucontato">jopedrogallego@hotmail.com</a></p>
+                <p><i class="bi bi-phone-fill"></i> (65) 99929-0366</p>
+            </div>
+            <div class="footer-section">
+                <h3>Siga-nos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
             </div>
         </div>
-
-        <div id="line-footer">
-            <p><i class="bi bi-envelope-fill"></i><a href="mailto:jopedrogallego@hotmail.com">Contato: jopedrogallego@hotmail.com</a></p>
-        </div>
-    </footer>
+    </footer>    
 </body>
 </html>
