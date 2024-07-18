@@ -55,7 +55,13 @@ a:hover {
 
 /* Menu mobile */
 
+.mobile-menu-icon {
+    display: none;
+}
 
+.mobile-menu {
+    display: none;
+}
 
 /* Menu mobile */
 
@@ -286,6 +292,44 @@ footer {
     transition: 0.45s;
 }
 
+.mobile-menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Estilo para telas pequenas */
+@media screen and (max-width: 946px) {
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    header > nav > ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #0A0EFA;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    header nav > ul > li {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    header nav > ul > li > a {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    header > nav > ul.active {
+        display: flex;
+    }
+}
+
 @media screen and (max-width: 946px) {
     .flex {
         flex-direction: column;
@@ -298,10 +342,6 @@ footer {
 
     #historia .flex {
         flex-direction: column-reverse;
-    }
-
-    #menu {
-        display: none;
     }
 
     #img-historia > img {
