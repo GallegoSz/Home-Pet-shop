@@ -298,8 +298,27 @@ footer {
     cursor: pointer;
 }
 
-/* Estilo para telas pequenas */
 @media screen and (max-width: 946px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    #topo-do-site h1 {
+        text-align: center;
+        font-size: 46px;
+    }
+
+    #historia .flex {
+        flex-direction: column-reverse;
+    }
+
+    #img-historia > img {
+        max-width: 300px;
+        min-width: 300px;
+        width: auto;
+        height: auto;
+    }
+
     .mobile-menu-icon {
         display: block;
     }
@@ -322,32 +341,10 @@ footer {
 
     header nav > ul > li > a {
         font-size: 18px;
-        padding: 15px;
+        padding: 1.5px;
     }
 
     header > nav > ul.active {
         display: flex;
-    }
-}
-
-@media screen and (max-width: 946px) {
-    .flex {
-        flex-direction: column;
-    }
-
-    #topo-do-site h1 {
-        text-align: center;
-        font-size: 46px;
-    }
-
-    #historia .flex {
-        flex-direction: column-reverse;
-    }
-
-    #img-historia > img {
-        max-width: 300px;
-        min-width: 300px;
-        width: auto;
-        height: auto;
     }
 }
